@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/index.css">
+</head>
+<body>
+    <h1 id="info-title">添加手机信息</h1>
+    <div class="info-tab">
+        <span>设备名称：</span>
+        <input type="text" name="device_name">
+    </div>
+    <div class="info-tab">
+        <span>是否智能手机：</span>
+        <input type="radio" value="true" name="issmart">
+        <input type="radio" value="false" name="issmart">
+    </div>
+    <div class="info-tab">
+        <span>发布时间：</span>
+        <input type="date" name="releasetime">
+    </div>
+    <div class="info-tab">
+        <span>售价：</span>
+        <input type="text" name="price">
+    </div>
+    <div class="info-tab">
+        <span>预安装软件：</span>
+        <input type="checkbox" name="apps" value="qq">
+        <input type="checkbox" name="apps" value="wechat">
+        <input type="checkbox" name="apps" value="weibo">
+    </div>
+     <div class="info-tab">
+        <span>厂商信息：</span>
+       <input type="text" name="manufacturername">
+        <select name="manufacturercountry" id="manufacturername">
+            <option value="usa">美国</option>
+            <option value="koeran">韩国</option>
+            <option value="china">中国</option>
+        </select>
+    </div>
+<%- include includes/footer.html%>
